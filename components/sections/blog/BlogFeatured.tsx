@@ -9,14 +9,14 @@ import { fadeInView, viewViewport } from "@/lib/motion";
 export function BlogFeatured() {
   return (
     <motion.section
-      className="mx-auto mb-24 max-w-screen-2xl px-6 md:px-12"
+      className="mx-auto mb-16 max-w-screen-2xl px-6 md:px-12"
       initial="hidden"
       whileInView="show"
       viewport={viewViewport}
       variants={fadeInView}
     >
-      <div className="grid grid-cols-1 items-center gap-12 rounded-[3rem] bg-surface-container-low p-8 md:p-12 lg:grid-cols-12">
-        <div className="relative h-96 overflow-hidden rounded-[2rem] lg:col-span-7 lg:h-[450px]">
+      <div className="grid grid-cols-1 items-center gap-8 rounded-[2rem] bg-surface-container-low p-6 md:p-8 lg:grid-cols-12">
+        <div className="relative h-64 overflow-hidden rounded-xl lg:col-span-7 lg:h-[300px]">
           <Image
             src={blogFeatured.imageSrc}
             alt=""

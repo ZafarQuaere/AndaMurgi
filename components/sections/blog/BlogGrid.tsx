@@ -14,10 +14,10 @@ export function BlogGrid() {
       viewport={viewViewport}
       variants={fadeInView}
     >
-      <div className="grid grid-cols-1 gap-x-12 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
         {blogPosts.map((post) => (
           <article key={post.slug} className="group">
-            <div className="mb-8 aspect-[4/5] overflow-hidden rounded-[2rem] bg-surface-container-high transition-transform duration-500 group-hover:scale-[0.98]">
+            <div className="mb-5 aspect-[4/3] overflow-hidden rounded-xl bg-surface-container-high transition-transform duration-500 group-hover:scale-[0.98]">
               <Image
                 src={post.imageSrc}
                 alt=""
@@ -48,7 +48,7 @@ export function BlogGrid() {
         ))}
       </div>
 
-      <div className="mt-24 flex flex-col items-center">
+      <div className="mt-16 flex flex-col items-center">
         <button
           type="button"
           className="rounded-full border-2 border-primary px-12 py-4 font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-on-primary"

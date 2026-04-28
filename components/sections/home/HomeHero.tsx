@@ -19,7 +19,7 @@ const secondaryHover = {
 export function HomeHero() {
   return (
     <section
-      className="relative flex min-h-screen items-center overflow-hidden pt-24"
+      className="relative flex min-h-[68vh] items-center overflow-hidden pt-24 pb-16 md:min-h-[72vh] md:pb-20"
       aria-labelledby="hero-heading"
     >
       <div className="absolute inset-0 z-0">
@@ -46,7 +46,7 @@ export function HomeHero() {
         >
           <motion.span
             variants={staggerItem}
-            className="mb-6 block text-sm font-semibold uppercase tracking-widest text-primary"
+            className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary"
           >
             Restoring Inner Balance
           </motion.span>
@@ -54,7 +54,7 @@ export function HomeHero() {
           <motion.h1
             id="hero-heading"
             variants={staggerItem}
-            className="font-headline mb-8 text-5xl leading-tight text-on-surface md:text-6xl lg:text-8xl"
+            className="font-headline mb-6 text-4xl leading-tight text-on-surface md:text-5xl lg:text-6xl xl:text-7xl"
           >
             Your Journey to{" "}
             <span className="italic text-primary">Serenity</span> Begins Here.
@@ -62,7 +62,7 @@ export function HomeHero() {
 
           <motion.p
             variants={staggerItem}
-            className="mb-12 max-w-2xl font-body text-xl leading-relaxed text-on-surface-variant md:text-2xl"
+            className="mb-8 max-w-2xl font-body text-lg leading-relaxed text-on-surface-variant md:text-xl"
           >
             SerenePath Clinic provides a compassionate, evidence-based sanctuary
             for mental health and emotional restoration.
@@ -70,15 +70,15 @@ export function HomeHero() {
 
           <motion.div
             variants={staggerItem}
-            className="flex flex-col gap-6 sm:flex-row"
+            className="flex flex-col gap-4 sm:flex-row"
           >
             <motion.div whileHover={primaryHover} whileTap={{ scale: 0.985 }}>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-10 py-5 text-lg font-semibold text-on-primary transition-opacity hover:opacity-90"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-semibold text-on-primary transition-opacity hover:opacity-90 md:px-9 md:text-lg"
               >
                 Explore Our Approach
-                <span className="material-symbols-outlined !text-[1.35rem]">
+                <span className="material-symbols-outlined !text-[1.2rem] md:!text-[1.3rem]">
                   arrow_forward
                 </span>
               </Link>
@@ -87,7 +87,7 @@ export function HomeHero() {
             <motion.div whileHover={secondaryHover} whileTap={{ scale: 0.985 }}>
               <Link
                 href="/services"
-                className="inline-flex w-full items-center justify-center rounded-full border-2 border-outline-variant/30 px-10 py-5 text-center text-lg font-semibold text-on-surface transition-colors hover:bg-surface-container-low sm:w-auto"
+                className="inline-flex w-full items-center justify-center rounded-full border-2 border-outline-variant/30 px-8 py-3.5 text-center text-base font-semibold text-on-surface transition-colors hover:bg-surface-container-low sm:w-auto md:px-9 md:text-lg"
               >
                 View Services
               </Link>

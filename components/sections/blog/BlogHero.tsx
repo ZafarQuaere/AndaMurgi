@@ -8,13 +8,13 @@ import { fadeInView, viewViewport } from "@/lib/motion";
 export function BlogHero() {
   return (
     <motion.section
-      className="mx-auto mb-20 max-w-screen-2xl px-6 md:px-12"
+      className="mx-auto mb-14 max-w-screen-2xl px-6 md:px-12"
       initial="hidden"
       whileInView="show"
       viewport={viewViewport}
       variants={fadeInView}
     >
-      <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+      <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
         <div>
           <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-primary">
             Our Journal
@@ -28,7 +28,7 @@ export function BlogHero() {
             and emotional resilience.
           </p>
         </div>
-        <div className="relative h-[400px] lg:h-[500px]">
+        <div className="relative h-[260px] sm:h-[300px] lg:h-[340px]">
           <div className="organic-mask absolute inset-0 overflow-hidden shadow-2xl">
             <Image
               src={assets.blog.heroInterior}

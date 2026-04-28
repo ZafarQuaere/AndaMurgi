@@ -25,13 +25,13 @@ export function BlogNewsletter() {
 
   return (
     <motion.section
-      className="mx-auto mt-32 max-w-4xl px-6 md:px-12"
+      className="mx-auto mt-20 max-w-3xl px-6 md:px-12"
       initial="hidden"
       whileInView="show"
       viewport={viewViewport}
       variants={fadeInView}
     >
-      <div className="rounded-[3rem] bg-tertiary-container p-16 text-center">
+      <div className="rounded-[2rem] bg-tertiary-container p-10 text-center md:p-12">
         <span className="material-symbols-outlined mb-6 text-5xl text-tertiary">
           mail_outline
         </span>
