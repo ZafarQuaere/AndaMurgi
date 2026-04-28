@@ -1,18 +1,11 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { Reveal } from "@/components/motion/Reveal";
 import { assets } from "@/lib/assets";
-import { fadeInView, viewViewport } from "@/lib/motion";
 
 export function HomeMeetDoctor() {
   return (
-    <motion.section
+    <Reveal
       className="bg-[#f1f4f3] py-32"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center gap-20 lg:flex-row">
@@ -23,8 +16,9 @@ export function HomeMeetDoctor() {
               alt="Professional portrait of Dr. Elena Vance"
               width={800}
               height={1000}
+              loading="lazy"
               className="relative z-10 aspect-[4/5] w-full object-cover pebble-mask shadow-2xl"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="(max-width: 768px) 90vw, (max-width: 1024px) 90vw, 50vw"
             />
           </div>
           <div className="w-full lg:w-1/2">
@@ -53,6 +47,6 @@ export function HomeMeetDoctor() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

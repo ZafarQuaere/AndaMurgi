@@ -1,19 +1,12 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { Reveal } from "@/components/motion/Reveal";
 import { assets } from "@/lib/assets";
-import { fadeInView, viewViewport } from "@/lib/motion";
 
 export function ContactBooking() {
   return (
-    <motion.section
+    <Reveal
       className="mx-auto mt-32 max-w-screen-2xl px-6 md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="relative overflow-hidden rounded-[4rem] bg-primary text-on-primary">
         <div className="absolute right-0 top-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-dim opacity-30 blur-3xl" />
@@ -63,6 +56,6 @@ export function ContactBooking() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

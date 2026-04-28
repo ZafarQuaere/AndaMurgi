@@ -1,17 +1,10 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function HomeServicesBento() {
   return (
-    <motion.section
+    <Reveal
       className="bg-[#f8faf9] py-32"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-20 text-center">
@@ -22,10 +15,10 @@ export function HomeServicesBento() {
             Specialized care tailored to your unique psychological needs.
           </p>
         </div>
-        <div className="grid h-auto grid-cols-1 gap-6 md:h-[600px] md:grid-cols-12">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:h-[600px]">
           <Link
             href="/services"
-            className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-[#d1e8db] p-10 transition-all hover:scale-[1.01] md:col-span-8"
+            className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-[#d1e8db] p-10 transition-all [@media(hover:hover)]:hover:scale-[1.01] md:col-span-8"
           >
             <div>
               <span className="material-symbols-outlined mb-4 text-4xl text-primary">
@@ -46,7 +39,7 @@ export function HomeServicesBento() {
           </Link>
           <Link
             href="/services"
-            className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-[#f6e2cf] p-10 transition-all hover:scale-[1.01] md:col-span-4"
+            className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-[#f6e2cf] p-10 transition-all [@media(hover:hover)]:hover:scale-[1.01] md:col-span-4"
           >
             <div>
               <span className="material-symbols-outlined mb-4 text-4xl text-tertiary">
@@ -67,7 +60,7 @@ export function HomeServicesBento() {
           </Link>
           <Link
             href="/services"
-            className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-[#dde4e3] p-10 transition-all hover:scale-[1.01] md:col-span-4"
+            className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-[#dde4e3] p-10 transition-all [@media(hover:hover)]:hover:scale-[1.01] md:col-span-4"
           >
             <div>
               <span className="material-symbols-outlined mb-4 text-4xl text-secondary">
@@ -86,7 +79,7 @@ export function HomeServicesBento() {
           </Link>
           <Link
             href="/services"
-            className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-[#d2e5f9] p-10 transition-all hover:scale-[1.01] md:col-span-8"
+            className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-[#d2e5f9] p-10 transition-all [@media(hover:hover)]:hover:scale-[1.01] md:col-span-8"
           >
             <div>
               <span className="material-symbols-outlined mb-4 text-4xl text-secondary">
@@ -107,6 +100,6 @@ export function HomeServicesBento() {
           </Link>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

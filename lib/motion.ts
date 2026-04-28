@@ -29,17 +29,16 @@ export const staggerItem = {
 };
 
 export const fadeInView = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 12 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { ...calmTransition, duration: 0.7 },
+    transition: { ...calmTransition, duration: 0.5 },
   },
 };
 
 /** Use with whileInView on section wrappers */
 export const viewViewport = {
   once: true,
-  margin: "-72px" as const,
-  amount: 0.2,
+  amount: "some" as const,
 };

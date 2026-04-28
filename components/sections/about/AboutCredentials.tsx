@@ -1,16 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function AboutCredentials() {
   return (
-    <motion.section
+    <Reveal
       className="mx-auto max-w-screen-2xl px-6 py-32 md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
         <div className="space-y-8 rounded-[3rem] bg-[#dde4e3] p-12 lg:col-span-8">
@@ -118,6 +111,6 @@ export function AboutCredentials() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

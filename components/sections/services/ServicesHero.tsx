@@ -1,16 +1,10 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function ServicesHero() {
   return (
-    <motion.header
+    <Reveal
+      as="header"
       className="mx-auto mb-24 max-w-screen-xl px-6 md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="max-w-3xl">
         <span className="mb-4 block text-sm font-medium uppercase tracking-[0.2em] text-tertiary">
@@ -26,6 +20,6 @@ export function ServicesHero() {
           you are in your journey.
         </p>
       </div>
-    </motion.header>
+    </Reveal>
   );
 }

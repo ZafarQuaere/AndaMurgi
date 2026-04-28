@@ -1,17 +1,10 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function HomeFinalCta() {
   return (
-    <motion.section
+    <Reveal
       className="py-16 md:py-20"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="container mx-auto px-6 md:px-12">
         <div className="relative mx-auto max-w-3xl overflow-hidden rounded-[2rem] bg-[#4f6359] px-8 py-10 text-center md:px-12 md:py-12">
@@ -34,6 +27,6 @@ export function HomeFinalCta() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

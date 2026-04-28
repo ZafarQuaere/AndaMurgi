@@ -1,16 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function ContactTestimonial() {
   return (
-    <motion.section
+    <Reveal
       className="mx-auto mt-32 max-w-4xl px-6 text-center md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="rounded-[3rem] bg-tertiary-container/30 p-16">
         <span className="material-symbols-outlined mb-6 text-5xl text-tertiary">
@@ -24,6 +17,6 @@ export function ContactTestimonial() {
           — Dr. Julian Vance, Client
         </cite>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

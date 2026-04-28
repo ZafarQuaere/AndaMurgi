@@ -1,18 +1,11 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { Reveal } from "@/components/motion/Reveal";
 import { assets } from "@/lib/assets";
-import { fadeInView, viewViewport } from "@/lib/motion";
 
 export function BlogHero() {
   return (
-    <motion.section
+    <Reveal
       className="mx-auto mb-14 max-w-screen-2xl px-6 md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
         <div>
@@ -40,6 +33,6 @@ export function BlogHero() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

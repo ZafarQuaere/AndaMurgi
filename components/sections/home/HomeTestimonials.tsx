@@ -1,16 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function HomeTestimonials() {
   return (
-    <motion.section
+    <Reveal
       className="overflow-hidden bg-[#f1f4f3] py-16 md:py-24"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="container mx-auto px-6 md:px-12">
         <h2 className="font-headline mb-10 text-center text-3xl text-on-surface md:text-4xl">
@@ -88,6 +81,6 @@ export function HomeTestimonials() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

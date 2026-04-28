@@ -1,16 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function ServicesQuote() {
   return (
-    <motion.section
+    <Reveal
       className="mx-auto mt-32 max-w-screen-xl px-6 md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="relative overflow-hidden rounded-[4rem] bg-[#f6e2cf] p-20 text-center">
         <div className="relative z-10 mx-auto max-w-3xl">
@@ -23,6 +16,6 @@ export function ServicesQuote() {
           </blockquote>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

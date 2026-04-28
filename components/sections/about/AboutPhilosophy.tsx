@@ -1,16 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function AboutPhilosophy() {
   return (
-    <motion.section
+    <Reveal
       className="rounded-[4rem] bg-[#f1f4f3] py-32"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="mx-auto max-w-4xl space-y-12 px-6 text-center md:px-12">
         <div className="mb-4 inline-block rounded-full bg-[#f6e2cf] p-4 text-[#5e5143]">
@@ -48,6 +41,6 @@ export function AboutPhilosophy() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

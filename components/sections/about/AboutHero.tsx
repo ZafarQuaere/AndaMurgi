@@ -1,18 +1,11 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { Reveal } from "@/components/motion/Reveal";
 import { assets } from "@/lib/assets";
-import { fadeInView, viewViewport } from "@/lib/motion";
 
 export function AboutHero() {
   return (
-    <motion.section
+    <Reveal
       className="mx-auto grid max-w-screen-2xl grid-cols-1 items-center gap-16 px-6 pb-24 md:px-12 lg:grid-cols-12 lg:pb-32"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="space-y-8 lg:col-span-7">
         <div className="space-y-4">
@@ -59,6 +52,6 @@ export function AboutHero() {
           sizes="(max-width: 1024px) 100vw, 40vw"
         />
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

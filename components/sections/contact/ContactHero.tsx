@@ -1,16 +1,10 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeInView, viewViewport } from "@/lib/motion";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function ContactHero() {
   return (
-    <motion.header
+    <Reveal
+      as="header"
       className="mx-auto mb-20 max-w-screen-2xl px-6 md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="grid items-end gap-16 md:grid-cols-2">
         <div>
@@ -28,6 +22,6 @@ export function ContactHero() {
           forward.
         </p>
       </div>
-    </motion.header>
+    </Reveal>
   );
 }

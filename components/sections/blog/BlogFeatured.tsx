@@ -1,19 +1,12 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { Reveal } from "@/components/motion/Reveal";
 import { blogFeatured } from "@/lib/content/blog";
-import { fadeInView, viewViewport } from "@/lib/motion";
 
 export function BlogFeatured() {
   return (
-    <motion.section
+    <Reveal
       className="mx-auto mb-16 max-w-screen-2xl px-6 md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="grid grid-cols-1 items-center gap-8 rounded-[2rem] bg-surface-container-low p-6 md:p-8 lg:grid-cols-12">
         <div className="relative h-64 overflow-hidden rounded-xl lg:col-span-7 lg:h-[300px]">
@@ -50,6 +43,6 @@ export function BlogFeatured() {
           </Link>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }

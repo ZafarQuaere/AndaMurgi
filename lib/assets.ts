@@ -1,42 +1,32 @@
-/** Central image URLs from reference HTML (Google aida-public CDN). */
+/** Central local image paths for static-export friendly assets. */
 
 export const assets = {
   home: {
-    heroForest:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA92p0ItKAIEVNyE9q53utwXnQzloCU-_d3MEu1qgqa3BXXkBgpOSeMuYKyt8yNgk_QUEEJ9v6VGbc5rVnTpE89S2ChMlfDliRhuhI9YblHqz_3v7dmQeCKbHBJFtgKGuIkX4oQ6dN-lcD4mnwk5XKcq80iFO3gIhknYeRaBXzoeYUJV5Na0lO1oJNVoZr45bNLHD6cViytsUepDB03D7iY2ulfDGIr4fiuWbyA0M9sUNoWCFax7S21aNFKAIERPKmwgIGx4BjPfBG-",
-    elenaPortrait:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBvzIUdqgPt62S_XqXf8clYdK32SLwyif2LIsYlI6YbpZf8UpJ5DxHkxpzYHLKgYaCc6FVlJ0XI3bKuun9JBknbLArbP1ZoEpqwoao-M9UjqFtBp7SJ0GCckx_F5BRz7VwSk9W_w2Piqg8uKX8rqd9mXJ6W1WrBNVKLfwi6yHBlI9CJwFkdUo_M6hCTI4gbE_i9c8LV8Tj3Dx0q8xZznwMQETDofO3YVsHOJ60K2WEkm15LZnKYYChZrxrxKI6Pp3asIHaKPQaclyYd",
+    heroForest: "/images/home/hero-forest.webp",
+    elenaPortrait: "/images/home/elena-portrait.webp",
   },
   services: {
-    individualRoom:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuC842VgdF2U9Vy84CoIW4ZqfPpQMILagmUIqcW9ycxTKF1JF3duX2OSOKOdOvBcM56k1K46Y8SLTWJzLA9PzqCeqz3SxiduRwQz5WwwwCQNNVB_vjb9ueBAPWCs7tvvvEsPz-RE2oyjBqbGD-Tlmmpbrt7F3EwUUlV2kL1E4OzlYuLr8Ivyx78bzQxBnZp6mofGXjJqZCOIfjkHlace6TYUb53wmbYOnqrRkf4U2ryFwbyHq6muySL2DPUpWeZUfOjstiz38craPQPC",
-    couplesHands:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCuyFXy_T7VFsRcCH5av6oc8WVDgPhye7NksUJJBL66mxHxqunf7od1gtTeOVTLLc-NMgMetXNjBF2N_EiMw7tutccz5MojIA7QvaSm8OoauXWPL8jivxMRny9ckj_hQGuv7ADDAu_tKhIzbyAr-bk49tR3onUkhJQIK9jyk-K5C4MaEAKH9undZv7_QwtRRv9ojZiCZUJZ71N8Bm2244tggY8HkkUCEZm_HPhH20XHG7WJX8WKCPZOoUMJwaSMk8m1LfcT2dmQxDU8",
-    ctaHills:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAa901wZ-ycJ2Wddm6E_dUaIZcL1RNjV-xh0mn44JYTBFGcwo7IhtvWFn0sdJoC55ZWtn_p8H8ceR8J22dRIElKQlJJtv4aTqdOO8z9VxCRv9_NGj-NdqcuMO1QVoqN46Uq7BnaxFoHC8o2IlmeDB3lNTeGXM3AmeFIgBgZHuo2DOWj38P9Y0GmhiLdmjJ5Rj67SsJmDLCTQA-PQPJQejOycZOVQh6902JLEgPeGAbUHuhD8DoVTxxbBg1amCQJ-25uOynPIBLhI_p8",
+    individualRoom: "/images/services/individual-room.webp",
+    couplesHands: "/images/services/couples-hands.webp",
+    ctaHills: "/images/services/cta-hills.webp",
   },
   about: {
-    portrait:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDiEUnMrhhZziABAHY6CujrN496lf7JcpYxVqv9b1Lxtn9ld_UNx5TTbmDwVMNQT-00-PD1FtkEfueZKNKtM2lBugql2IiAvhHFl3-XbE_JnQwOxGhI33HFp2FDbrIl0cpIuvm-45tv0Xpr20_T-_TF1YdrLsi9iahgIpQQ5Zk5YPZf0dIhD-dl8xUpeJEGeTrRGqJtYJW9HXMUlWoCtTF94pf4gegMh7llO9bUSkOhw025_GexBxFytdgWlpUujTM7hRscoAO9zbw4",
+    portrait: "/images/about/portrait.webp",
   },
   blog: {
-    heroInterior:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAvO1KeccPTsLDMVSn6svJVEtFvOrjHAcAfEmRpUGZV4tnzOEZ_wfYygR0M15L-9HVOkYXOq4X1FQhrL_sayO17C_C_OC2ymPTjGLGczBdHDX35uuDW_jmtn8BW4Ap8Xt74t2T3jK2kfev6YWT524m4MufsA2K_g7nMwqIYtrdovY1-_PkcwJebwY2VsmRVFG0AJsqno7D18O2DS10X8taRrJYW2PcaDA0j98RFxTl6aC-F_p-H6dNYCSKYxamvBxyXQF4tMOd3EiY5",
-    featuredForest:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAyeO_HLA8xDc0LRBQXGodY_SdSymIIXH9Hhglfug-Gia2rn3C86uYegzdzz5XhqP8IkkIcxlKPJp3gDO65bPwMNHNnJrhSAZizhkYGMJV3my52wADX_JCsPorf7j73-Sioqp7guSMu3T2cB_YcQzXaPRVJOe4pkDmcCOnoEmsR4sNx4DwuzSYFpUPe7WcNbQQCpeduazuO94aO0_XNka-tIWnvhoccUPHmJhf74gkBisI8rL8QGeecAqKEcbR3TbPeJbeB8zhtgblc",
+    heroInterior: "/images/blog/hero-interior.webp",
+    featuredForest: "/images/blog/featured-forest.webp",
     grid: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB6URyWqZTcYDahTtfcpliLsQWPEYMFpVVpWnJXOwnrB1oh49amHceuN8JCisn5ceo4Qx5yQFDsIWbs8fbVCCOCi2J_yD5MwAEgQxNC7COKmW-Ru7rz3-pmnEK1appsQKVPjq3lgUSadI_SnnkOWexkwO7WD-uxi106on0yYHHwZYEezUVHKxgrHghBltw1PIzNz_y-nJSAU1WpzQn075C288J2jCCEKVEBj6oNBedo5tPokKclZKfHF8IXhluQMQe-e8NhbnmHu7qK",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD056s9DRnxFSDrwEawiXxAt5R3D2ETipgAue9rlgUA6SlJHJzMoEDzUc54iAUt26t_r54WZ7LoUgdZBwvnBKmNF49-4hxGtSNpj9ROqhsa5kmtF7sN7OAG9DBEK5pQzHX58LC0gKkUjGTsAGh7K5Oyubrh5VWh0ZfpUC10R4V_Qz_QIyRd5u_DVcu1h0EAKoK1EERlHOL0LZm0YCu-ql6gc_knNJRt2gOpScKJ-PO0kD86MM0PNZs4te3xnEVqYyABpOzzAAWzNre9",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDkE-H__-6I55bH5AwRA41OyXv4mXdrXpbfmtiWTwdJPsHqTbby-J4bEfjfj9ogcIezUieGgkGNe7FZlq9NnnfYxOrL7L0JaudFr5ZIjCZ9t8qMRq-RvNxD8orVlAGHjiDQ3kjnWmkhtBkXHsuIbv8Q1Mc546DmkG4K5jgRexKJt7E3lJ9-WboQM1qV89jJVAEntflgJj9P2A3c_uY9QBYOtJAK5fSrmC5KQG5HtJ6J_GmubAHOrKvhfuuQYJHP8fjcfb3W-OiD9OSz",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBCZMq6G8Mf90U4N66mA8ZQ5qSBH7gDeXy_uXJCWwXNDaUiS7PXbV6-IrUa7UzW06AufmDP-ng1ZWM8MVF2cKlMbw3Ngg2nI_KXFkg5cnfNSypM3ovefyhYsO3E96XI_5_1Df1AEialix-iLIwleDb4d4CLOwdKCuoZOTq4bsqtCYz0TJac2GS3yH-54n4gTyRgrtdx6TSddjf7Q1c13KYyUCe9dtIbSl9TplxU_2IQrHImTTpnf4UFqUsHZLmQx0hgM1kw6npVeuX0",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBUDb1lyqlsO2z-PgnBiOcANGqp5vAmkuok8ZiTE6Pm3W-AhsTiR1nacdQGnCMgIhEOqogDa7W5Gc2J0SUPoOvXtkUbqyEpKZ5PYQZhgn8eZqUD1W-UT483fOYtDHdb_HwK8xSuQ_IRbAnRMcbqeV9chtfXKsd8Sq0LUtAn-C8Zeei4EmgJoU77BdVjlEUmBtSLIuVDSlk80HcMXBC1XMO1lpi4mhA78FrrCY9KFmS00T9rdzCa9YeEm65NnjKRVMNy3cw7rDI5AwAd",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBpssdkrQuA66zu9Ateg8oH_Ciyb-NMB60o0krjd0vonjAGQWqd8a_Qdc220NJdeCmORZLTeIS3Ol9Q-F_HidPm3F1sYEiPLo4H55JP-HlM43uBglYRj3tgP6WPAG7QYWvpNLpPLiri_cNeoKTLETlwytMTRQK7vG8vEfEuCSZth7Yk0HPogTol1AogKdRujL68gGOhMgItN2jpaHNYpu01banS0s6n1fN__JzaFSGdZU5XtHouf3BBvUAAuPn_BoLF3rkAJOhp_oLk",
+      "/images/blog/grid-1.webp",
+      "/images/blog/grid-2.webp",
+      "/images/blog/grid-3.webp",
+      "/images/blog/grid-4.webp",
+      "/images/blog/grid-5.webp",
+      "/images/blog/grid-6.webp",
     ],
   },
   contact: {
-    map:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCo8l8fW3tOzKunquzoeb4aq4ZIUgLK8_XxN02RTVXWjcUCf9O_GDp7iefVA9rR3sUfad9sydGnLaJUUxQ5kCMU4vF3MsheNQymY60Yr4vEex7rLmVLG76bXMU5x6uUIUFdxXZbP6D_MBY0BNCyuRhB5_JKP0wOel7WJrnacb8XTXUavU_0PcZ8YchYIZpHYL5KinECWT2eoyKq8_z2vXK5gkE5DrzqLBl0znUaw0nxM5LXF5dD-Y7s3cWfUKzQ_R0Sq5nTftunSDv_",
-    meditation:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBTNijzSGSxuABnj5I1DKz-TAtYy3Jro0QHE-aas_ClRYIhvJzcXeIySMtzbQ2hJrv6c9EEfpsOJ_zd-nSFFZtREC-83hJJ9owUJv6FeODb4QyYjT0Dt2T71GE8OleAomuUikh0shIpWPCDZvTl9ieQ_RAwRTvSFseglFtoBFJ3_SkYubiFGj-_Ho_DQJMcp9ca3FR38dl_KptcHO7yXwfpTKdpbKR5cizv3zLkEGWRJSrH0G4gr5xn6u-aqfmkNXfIstWy0bWY8p86",
+    map: "/images/contact/map.webp",
+    meditation: "/images/contact/meditation.webp",
   },
 } as const;

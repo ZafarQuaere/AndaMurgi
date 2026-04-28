@@ -1,19 +1,12 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { Reveal } from "@/components/motion/Reveal";
 import { assets } from "@/lib/assets";
-import { fadeInView, viewViewport } from "@/lib/motion";
 
 export function ServicesBento() {
   return (
-    <motion.section
+    <Reveal
       className="mx-auto max-w-screen-2xl px-6 md:px-12"
-      initial="hidden"
-      whileInView="show"
-      viewport={viewViewport}
-      variants={fadeInView}
     >
       <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
         <div className="group relative min-h-[320px] overflow-hidden rounded-[2.5rem] bg-[#f1f4f3] p-12 md:col-span-8 lg:min-h-[420px]">
@@ -49,7 +42,8 @@ export function ServicesBento() {
               src={assets.services.individualRoom}
               alt=""
               fill
-              className="rounded-l-[3rem] object-cover opacity-80 transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+              className="rounded-l-[3rem] object-cover opacity-80 transition-transform duration-700 [@media(hover:hover)]:group-hover:scale-105"
               sizes="33vw"
             />
           </div>
@@ -122,16 +116,18 @@ export function ServicesBento() {
                 <span className="material-symbols-outlined">arrow_forward</span>
               </Link>
             </div>
-            <div className="h-48 w-full overflow-hidden rounded-[2rem] grayscale transition-all duration-500 hover:grayscale-0 md:w-48 md:shrink-0">
+            <div className="h-48 w-full overflow-hidden rounded-[2rem] grayscale transition-all duration-500 [@media(hover:hover)]:hover:grayscale-0 md:w-48 md:shrink-0">
               <Image
                 src={assets.services.couplesHands}
                 alt=""
                 width={400}
                 height={400}
+                loading="lazy"
                 className="h-full w-full object-cover"
+                sizes="(max-width: 768px) 100vw, 192px"
               />
             </div>
-          </div>
+        </div>
         </div>
 
         <div className="relative mt-12 flex flex-col items-center gap-12 overflow-hidden rounded-[3rem] bg-[#4f6359] p-16 text-[#e8fef1] md:col-span-12 md:flex-row">
@@ -140,6 +136,7 @@ export function ServicesBento() {
               src={assets.services.ctaHills}
               alt=""
               fill
+              loading="lazy"
               className="object-cover"
               sizes="100vw"
             />
@@ -175,6 +172,6 @@ export function ServicesBento() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </Reveal>
   );
 }
