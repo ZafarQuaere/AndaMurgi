@@ -1,0 +1,4 @@
+# Static export: `next build` writes the site to ./out
+[build]
+  command = "npm run build"
+  publish = "out"
