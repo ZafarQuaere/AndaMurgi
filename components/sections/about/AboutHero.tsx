@@ -13,8 +13,8 @@ export function AboutHero() {
             Compassionate Care
           </span>
           <h1 className="font-headline text-6xl font-bold leading-[1.1] text-[#2d3433] lg:text-7xl">
-            Meet Dr. Elena <br />
-            <span className="font-normal italic text-[#4f6172]">Valeska</span>
+            Meet Dr. Masiha <br />
+            <span className="font-normal italic text-[#4f6172]">Raquib</span>
           </h1>
         </div>
         <p className="max-w-2xl text-xl font-light leading-relaxed text-[#596060]">

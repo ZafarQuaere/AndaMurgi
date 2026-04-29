@@ -15,7 +15,7 @@ export function HomeTestimonials() {
               format_quote
             </span>
             <p className="relative z-10 mb-5 font-headline text-base italic leading-relaxed md:text-[1.0625rem]">
-              &ldquo;Finding Dr. Elena was a turning point. Her calm presence and
+              &ldquo;Finding Dr. Masiha was a turning point. Her calm presence and
               insightful approach helped me navigate a very dark period in my
               life with grace.&rdquo;
             </p>
