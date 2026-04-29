@@ -3,24 +3,22 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function HomeFinalCta() {
   return (
-    <Reveal
-      className="py-16 md:py-20"
-    >
+    <Reveal className="py-10 md:py-12">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="relative mx-auto max-w-3xl overflow-hidden rounded-[2rem] bg-[#4f6359] px-8 py-10 text-center md:px-12 md:py-12">
-          <div className="absolute -right-32 -top-32 h-64 w-64 rounded-full bg-primary-dim blur-[100px]" />
-          <div className="absolute -bottom-32 -left-32 h-64 w-64 rounded-full bg-primary-dim opacity-50 blur-[100px]" />
-          <div className="relative z-10 mx-auto max-w-xl">
-            <h2 className="font-headline mb-5 text-3xl leading-tight text-on-primary md:text-4xl lg:text-[2.75rem]">
+        <div className="relative mx-auto max-w-xs overflow-hidden rounded-xl bg-[#4f6359] px-4 py-5 text-center sm:max-w-sm md:px-5 md:py-6">
+          <div className="absolute -right-20 -top-20 h-36 w-36 rounded-full bg-primary-dim blur-[56px]" />
+          <div className="absolute -bottom-20 -left-20 h-36 w-36 rounded-full bg-primary-dim opacity-50 blur-[56px]" />
+          <div className="relative z-10">
+            <h2 className="font-headline mb-2 text-lg leading-snug text-on-primary md:text-xl">
               Ready to start your path?
             </h2>
-            <p className="mb-8 text-base leading-relaxed text-on-primary/80 md:text-lg">
+            <p className="mb-4 text-xs leading-relaxed text-on-primary/85 md:text-[0.8125rem]">
               Take the first step toward a more peaceful and balanced life. Book
               a confidential introductory consultation today.
             </p>
             <Link
               href="/contact"
-              className="inline-block rounded-full bg-[#f8faf9] px-8 py-3.5 text-base font-bold text-[#4f6359] shadow-lg transition-all hover:bg-[#e8fef1] md:px-9 md:text-lg"
+              className="inline-block rounded-full bg-[#f8faf9] px-4 py-2 text-xs font-bold leading-snug text-[#4f6359] shadow-sm transition-all hover:bg-[#e8fef1] sm:px-5 sm:py-2.5 sm:text-[0.8125rem]"
             >
               Request Your Appointment
             </Link>

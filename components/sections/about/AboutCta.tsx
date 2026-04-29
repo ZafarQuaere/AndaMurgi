@@ -3,10 +3,8 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function AboutCta() {
   return (
-    <Reveal
-      className="mx-auto mb-32 max-w-screen-xl px-6 md:px-12"
-    >
-      <div className="relative space-y-8 overflow-hidden rounded-[4rem] bg-[#435565] p-20 text-center text-white">
+    <Reveal className="mx-auto mb-20 max-w-xl px-6 md:px-12 lg:max-w-lg">
+      <div className="relative space-y-4 overflow-hidden rounded-2xl bg-[#435565] px-8 py-10 text-center text-white md:px-10 md:py-12">
         <div
           className="pointer-events-none absolute inset-0 opacity-20"
           style={{
@@ -16,23 +14,23 @@ export function AboutCta() {
           }}
           aria-hidden
         />
-        <h2 className="relative z-10 font-headline text-5xl font-bold text-white">
+        <h2 className="relative z-10 font-headline text-2xl font-bold text-white md:text-3xl">
           Start Your Journey Today
         </h2>
-        <p className="relative z-10 mx-auto max-w-xl text-xl text-white/80">
-          Dr. Elena is currently accepting a limited number of new private
+        <p className="relative z-10 mx-auto max-w-md text-sm text-white/85 md:text-base">
+          Dr. Masiha is currently accepting a limited number of new private
           clients for intensive restorative therapy.
         </p>
-        <div className="relative z-10 flex flex-col justify-center gap-6 sm:flex-row">
+        <div className="relative z-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
           <Link
             href="/contact"
-            className="rounded-full bg-[#4f6359] px-10 py-4 font-label font-bold text-white transition-all duration-300 hover:bg-[#44574e]"
+            className="rounded-full bg-[#4f6359] px-6 py-2.5 text-sm font-bold text-white transition-all duration-300 hover:bg-[#44574e] md:px-7 md:py-3"
           >
             Schedule Consultation
           </Link>
           <Link
             href="/services"
-            className="rounded-full border border-white/20 bg-white/10 px-10 py-4 font-label font-bold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20"
+            className="rounded-full border border-white/20 bg-white/10 px-6 py-2.5 text-sm font-bold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 md:px-7 md:py-3"
           >
             View Services
           </Link>
