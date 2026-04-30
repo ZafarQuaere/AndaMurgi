@@ -3,8 +3,8 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function AboutCta() {
   return (
-    <Reveal className="mx-auto mb-20 max-w-xl px-6 md:px-12 lg:max-w-lg">
-      <div className="relative space-y-4 overflow-hidden rounded-2xl bg-[#435565] px-8 py-10 text-center text-white md:px-10 md:py-12">
+    <Reveal className="mx-auto mb-20 max-w-screen-2xl px-6 md:px-12">
+      <div className="relative space-y-4 overflow-hidden rounded-[3rem] bg-[#435565] px-8 py-10 text-center text-white md:p-16">
         <div
           className="pointer-events-none absolute inset-0 opacity-20"
           style={{

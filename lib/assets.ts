@@ -3,7 +3,8 @@
 export const assets = {
   home: {
     heroForest: "/images/home/hero-forest.webp",
-    elenaPortrait: "/images/home/elena-portrait.webp",
+    // elenaPortrait: "/images/home/elena-portrait.webp",
+    elenaPortrait: "/images/home/masiha-home.jpg",
   },
   services: {
     individualRoom: "/images/services/individual-room.webp",
@@ -11,7 +12,9 @@ export const assets = {
     ctaHills: "/images/services/cta-hills.webp",
   },
   about: {
-    portrait: "/images/about/portrait.webp",
+    // portrait: "/images/about/portrait.webp",
+    portrait: "/images/about/masiha-about.jpg",
+
   },
   blog: {
     heroInterior: "/images/blog/hero-interior.webp",
