@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { PageMain } from "@/components/layout/PageMain";
 import { AboutCredentials } from "@/components/sections/about/AboutCredentials";
-import { AboutCta } from "@/components/sections/about/AboutCta";
 import { AboutHero } from "@/components/sections/about/AboutHero";
 import { AboutPhilosophy } from "@/components/sections/about/AboutPhilosophy";
 
@@ -17,7 +16,6 @@ export default function AboutPage() {
       <AboutHero />
       <AboutPhilosophy />
       <AboutCredentials />
-      <AboutCta />
     </PageMain>
   );
 }

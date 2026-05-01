@@ -1,12 +1,13 @@
 import { Reveal } from "@/components/motion/Reveal";
+import { AboutCtaCard } from "@/components/sections/about/AboutCta";
 
 export function AboutCredentials() {
   return (
     <Reveal
-      className="mx-auto max-w-screen-2xl px-6 py-32 md:px-12"
+      className="mx-auto max-w-screen-2xl px-6 py-24 pb-20 md:px-12 md:pb-24 lg:py-32"
     >
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
-        <div className="space-y-8 rounded-[3rem] bg-[#dde4e3] p-12 lg:col-span-8">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch">
+        <div className="flex min-h-[280px] flex-col space-y-8 rounded-[3rem] bg-[#dde4e3] p-10 md:p-12 lg:col-span-8 lg:min-h-[340px]">
           <div className="flex items-center gap-4">
             <span className="material-symbols-outlined text-[#4f6359]">school</span>
             <h3 className="font-headline text-3xl font-bold text-[#2d3433]">
@@ -46,7 +47,7 @@ export function AboutCredentials() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between rounded-[3rem] bg-[#4f6359] p-12 text-[#e8fef1] lg:col-span-4">
+        <div className="flex min-h-[280px] flex-col justify-between rounded-[3rem] bg-[#4f6359] p-10 text-[#e8fef1] md:p-12 lg:col-span-4 lg:min-h-[340px]">
           <div className="space-y-6">
             <span className="material-symbols-outlined text-4xl">
               workspace_premium
@@ -75,9 +76,9 @@ export function AboutCredentials() {
           </div>
         </div>
 
-        <div className="rounded-[3rem] bg-[#f6e2cf]/40 p-12 lg:col-span-12">
-          <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
-            <div className="md:w-1/3">
+        <div className="rounded-[3rem] bg-[#f6e2cf]/40 px-10 py-10 md:px-12 md:py-11 lg:col-span-12 lg:px-14">
+          <div className="flex flex-col items-center justify-between gap-10 md:flex-row md:gap-12">
+            <div className="md:w-1/3 md:shrink-0">
               <h3 className="font-headline text-3xl font-bold text-[#5e5143]">
                 Professional Associations
               </h3>
@@ -86,7 +87,7 @@ export function AboutCredentials() {
                 institutions.
               </p>
             </div>
-            <div className="grid w-full grid-cols-2 gap-8 opacity-70 grayscale md:w-2/3 md:grid-cols-4">
+            <div className="grid w-full grid-cols-2 gap-8 opacity-70 grayscale sm:gap-10 md:w-2/3 md:grid-cols-4">
               {[
                 { icon: "groups" as const, label: "APA" },
                 { icon: "neurology" as const, label: "ABPP" },
@@ -109,6 +110,10 @@ export function AboutCredentials() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="lg:col-span-12">
+          <AboutCtaCard />
         </div>
       </div>
     </Reveal>
